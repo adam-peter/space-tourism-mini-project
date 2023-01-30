@@ -12,7 +12,7 @@ const Header = () => {
         <link rel="icon" href="/images/favicon.png" />
       </Head>
 
-      <header className="flex items-center justify-between">
+      <header className="flex items-center justify-between font-bellefair">
         <Image
           src="/images/logo.svg"
           alt="logo"
@@ -30,20 +30,20 @@ const Header = () => {
           ></Image>
         </div>
 
-        <ul className="flex gap-[4vw] bg-space-purple py-12 px-8">
-          <li>
-            <Link href="#" className="">
-              00 HOME
+        <ul className="flex gap-[4vw] bg-space-white/5 py-12 px-8">
+          <li className="">
+            <Link href="#" className="hover:text-gray-200 hover:underline underline-offset-[3.2rem] decoration-2">
+              HOME
             </Link>
           </li>
           <li>
-            <Link href="#">01 DESTIONATION</Link>
+            <Link href="#" className="hover:text-gray-200 hover:underline underline-offset-[3.2rem] decoration-2">DESTIONATION</Link>
           </li>
           <li>
-            <Link href="#">02 CREW</Link>
+            <Link href="#" className="hover:text-gray-200 hover:underline underline-offset-[3.2rem] decoration-2">CREW</Link>
           </li>
           <li>
-            <Link href="#">03 TECHNOLOGY</Link>
+            <Link href="#" className="hover:text-gray-200 hover:underline underline-offset-[3.2rem] decoration-2">TECHNOLOGY</Link>
           </li>
         </ul>
       </header>
