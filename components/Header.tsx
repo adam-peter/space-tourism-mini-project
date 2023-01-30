@@ -11,14 +11,41 @@ const Header = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/favicon.png" />
       </Head>
-      <header className="flex justify-center gap-4">
-        <Image src="/images/logo.svg" alt="logo" width="32" height="32"></Image>
-        <div>
-          <Link href="#">00 HOME</Link>
-          <Link href="#">01 DESTIONATION</Link>
-          <Link href="#">02 CREW</Link>
-          <Link href="#">03 TECHNOLOGY</Link>
+
+      <header className="flex items-center justify-between">
+        <Image
+          src="/images/logo.svg"
+          alt="logo"
+          width="32"
+          height="32"
+          className="ml-8"
+        ></Image>
+
+        <div className="hidden">
+          <Image
+            src="/images/hamburger.svg"
+            alt="open-menu"
+            width="32"
+            height="32"
+          ></Image>
         </div>
+
+        <ul className="flex gap-[4vw] bg-space-purple py-12 px-8">
+          <li>
+            <Link href="#" className="">
+              00 HOME
+            </Link>
+          </li>
+          <li>
+            <Link href="#">01 DESTIONATION</Link>
+          </li>
+          <li>
+            <Link href="#">02 CREW</Link>
+          </li>
+          <li>
+            <Link href="#">03 TECHNOLOGY</Link>
+          </li>
+        </ul>
       </header>
     </>
   );

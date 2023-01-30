@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <title>Home</title>
       </Head>
-      <main className="">Hello!</main>
+      <main className=""></main>
     </>
   );
 }
