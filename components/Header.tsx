@@ -20,6 +20,7 @@ const Header = () => {
           height="32"
           className="ml-8"
         ></Image>
+        <div className="invisible lg:visible h-[1px] w-3/12 bg-space-white/20 "></div>
 
         <div className="hidden">
           <Image
@@ -30,20 +31,38 @@ const Header = () => {
           ></Image>
         </div>
 
-        <ul className="flex gap-[4vw] bg-space-white/5 py-12 px-8">
+        <ul className="flex md:flex-row flex-col gap-[4vw] bg-space-white/5 py-12 px-8 w-7/12">
           <li className="">
-            <Link href="#" className="hover:text-gray-200 hover:underline underline-offset-[3.2rem] decoration-2">
-              HOME
+            <Link
+              href="/"
+              className="decoration-2 underline-offset-[3.2rem] hover:text-gray-200 hover:underline"
+            >
+              00 HOME
             </Link>
           </li>
           <li>
-            <Link href="#" className="hover:text-gray-200 hover:underline underline-offset-[3.2rem] decoration-2">DESTIONATION</Link>
+            <Link
+              href="#"
+              className="decoration-2 underline-offset-[3.2rem] hover:text-gray-200 hover:underline"
+            >
+              01 DESTIONATION
+            </Link>
           </li>
           <li>
-            <Link href="#" className="hover:text-gray-200 hover:underline underline-offset-[3.2rem] decoration-2">CREW</Link>
+            <Link
+              href="#"
+              className="decoration-2 underline-offset-[3.2rem] hover:text-gray-200 hover:underline"
+            >
+              02 CREW
+            </Link>
           </li>
           <li>
-            <Link href="#" className="hover:text-gray-200 hover:underline underline-offset-[3.2rem] decoration-2">TECHNOLOGY</Link>
+            <Link
+              href="#"
+              className="decoration-2 underline-offset-[3.2rem] hover:text-gray-200 hover:underline"
+            >
+              03 TECHNOLOGY
+            </Link>
           </li>
         </ul>
       </header>
